@@ -1,0 +1,46 @@
+/* https://codepen.io/marcxy/pen/vYdxVyL */
+
+body {
+    padding: 0px;
+    margin: auto;
+    width: 1024px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "aside main"
+        "footer footer";
+    grid-template-columns: minmax(200px, .75fr) 3fr;
+    grid-template-rows: .75fr 12fr 1fr;
+    gap: 10px;
+}
+
+#header {
+    grid-area: header;
+    background-color: aliceblue;
+}
+
+#aside {
+    grid-area: aside;
+    background-color: darkgray;
+}
+
+#main {
+    grid-area: main;
+    background-color: burlywood;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: cadetblue;
+}
+
+.nav {
+    padding: 10px;
+    background-color: gold;
+    margin-bottom: 10px;
+}
+
+.nav:hover {
+    color: white;
+}
